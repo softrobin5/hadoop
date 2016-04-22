@@ -224,9 +224,8 @@ cp /opt/hadoop/etc/hadoop/mapred-site.xml.template /opt/hadoop/etc/hadoop/mapred
 vim /opt/hadoop/etc/hadoop/mapred-site.xml
 ```
 
-We need to enter the following content in between the
-```sh
-<configuration></configuration> tag:
+We need to enter the following content in between the <configuration></configuration> tag:
+ ```sh
  <property>
   <name>mapred.job.tracker</name>
   <value>localhost:54311</value>
@@ -250,8 +249,7 @@ sudo chown -R hduser:hadoop /data/hadoop/hadoop_store
 ```sh
 vim /opt/hadoop/etc/hadoop/hdfs-site.xml
 ```
-We need to enter the following content in between the
-<configuration></configuration> tag:
+We need to enter the following content in between the <configuration></configuration> tag:
 
 ```sh
 <property>
@@ -274,6 +272,14 @@ We need to enter the following content in between the
    <name>dfs.data.dir</name>
    <value>file:/data/hadoop/tmp/dfs/datanode</value>
  </property>
+```
+
+```sh
+vim /opt/hadoop/etc/hadoop/yarn-site.xml
+```
+We need to enter the following content in between the <configuration></configuration> tag:
+```sh
+
 ```
 
 Format the New Hadoop Filesystem
