@@ -52,7 +52,7 @@ sudo apt-get install -y git
 sudo apt-get purge maven maven2 maven3
 sudo add-apt-repository ppa:andrei-pozolotin/maven3
 sudo apt-get update
-sudo apt-get install maven3
+sudo apt-get install -y maven3
 ```
 ### check maven version
 ```sh
@@ -149,7 +149,7 @@ sudo adduser hduser sudo
 ```
 Installing / Updating SSH
 ```sh
-sudo apt-get install ssh
+sudo apt-get install -y ssh
 ```
 
 Create and Setup SSH Certificates
