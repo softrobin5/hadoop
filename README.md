@@ -10,7 +10,7 @@ Now move the JDK 8 directory to /usr/lib
 
 ```sh
 sudo mkdir -p /usr/lib/jvm
-sudo mv ./jdk1.8.0 /usr/lib/jvm/
+sudo mv jdk1.8.0_91 /usr/lib/jvm/
 ```
 Correct the file ownership
 ```sh
