@@ -1,4 +1,4 @@
-# installing java
+# Installing Java
 [Download][df1] java jdk-8u91-linux-x64.tar.gz :  
 
 Uncompress :
@@ -29,18 +29,21 @@ java -version
 You should see something like
 
 java version "1.8.0_91"
+
 Java(TM) SE Runtime Environment (build 1.8.0_91-b14)
+
 Java HotSpot(TM) 64-Bit Server VM (build 25.91-b14, mixed mode)
 
-----------------------------------------------------------------------------------------------
+---
 
-# maven & git
+# Install git
 
 ```sh
 sudo apt-get install git
 ```
+---
 
-### Install Maven
+# Install Maven
 ```sh
 sudo apt-get purge maven maven2 maven3
 sudo add-apt-repository ppa:andrei-pozolotin/maven3
@@ -53,24 +56,38 @@ mvn -version
 ```
 You should see something like
 
-Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
-Maven home: /usr/share/maven3
-Java version: 1.8.0_91, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/jdk1.8.0_91/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "3.13.0-74-generic", arch: "amd64", family: "unix"
--------------------
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5;
 
-# mysql installation
+2015-11-10T16:41:47+00:00)
+
+Maven home: /usr/share/maven3
+
+Java version: 1.8.0_91, vendor: Oracle Corporation
+
+Java home: /usr/lib/jvm/jdk1.8.0_91/jre
+
+Default locale: en_US, platform encoding: UTF-8
+
+OS name: "linux", version: "3.13.0-74-generic", arch: "amd64", family: "unix"
+
+---
+
+# MySql Installation
 
 login detail:-
+
 hostname:localhost
+
 username:root
+
 password:root
 
 directory structure:-
+
 installed package location: 	/usr/local/mysql
+
 data location: 			/data/mysql/
+
 log location: 			/var/log/nazara/mysql
 
 ```sh
@@ -80,7 +97,7 @@ sh install_mysql.sh
 ```
 -------------------------
 
-### kafka single broker setups
+# Kafka single broker setups
 
 installed package location: 	/opt/kafka
 data location: 			
@@ -114,7 +131,7 @@ sudo supervisorctl update
 ---
 
 
-# haddop installtion
+# Haddop Installtion
 
 Hadoop 2.7 Installing on Ubuntu 14.04 (Single-Node Cluster) with YARN
 
@@ -150,7 +167,7 @@ Setup Configuration Files
 ```sh
 sudo vim /etc/bash.bashrc
 ```
-### append at the end of above file
+append at the end of above file
 ```sh
 #HADOOP VARIABLES START
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_91
@@ -289,7 +306,7 @@ sudo su hduser
 cd /opt/hadoop/sbin
 stop-all.sh
 ```
-# Hadoop Web Interfaces
+### Hadoop Web Interfaces
 ```sh
 Name Node : http://52.90.177.6:50070/
 YARN Services : http://52.90.177.6:8088/
@@ -299,7 +316,7 @@ logs : http://52.90.177.6:50090/logs/
 ```
 ------------------
 
-#gobblin installtion
+# Gobblin Instaltion
 
 ```sh
 cd /opt/gobblin
@@ -316,7 +333,7 @@ export GOBBLIN_HOME=/opt/gobblin
 
 ---
 
-# spark
+# Spark
 
 download package in opt folder:-
 
@@ -349,7 +366,7 @@ mvn -Pyarn -Phadoop-2.6 -Dscala-2.11 -DskipTests package -X -Phive -Phive-thrift
 ```
 ---
 
-#install aerospike
+# Install Aerospike
 ```sh
 cd /opt
 wget -O aerospike.tgz 'http://aerospike.com/download/server/latest/artifact/ubuntu14'
