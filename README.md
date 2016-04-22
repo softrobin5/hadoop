@@ -20,6 +20,10 @@ sudo vim /etc/bash.bashrc
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_91
 export PATH=$JAVA_HOME/bin:$PATH
 ```
+```sh
+source /etc/bash.bashrc
+```
+
 Check if installation was successful
 You can check if the installation succeeded with the following command:
 ```sh
