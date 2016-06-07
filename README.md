@@ -92,7 +92,7 @@ installed package location: 	/usr/local/mysql
 
 data location: 			/data/mysql/
 
-log location: 			/var/log/nazara/mysql
+log location: 			/var/log/nz/mysql
 
 ```sh
 run installation script for mysql installtion
@@ -416,17 +416,17 @@ namespace gameops {
 
 ---
 ```sh
-mkdir /home/ubuntu/nazara
-cd /home/ubuntu/nazara/
-git clone git@github.com:47Billion/nazaragateway.git
+mkdir /home/ubuntu/nz
+cd /home/ubuntu/nz/
+git clone git@github.com:47/nzgateway.git
 
-cd /home/ubuntu/nazara/nazaragateway/subscription-pipeline/db2kafka
+cd /home/ubuntu/NZ/nzgateway/subscription-pipeline/db2kafka
 mvn clean install package
 
-cd /home/ubuntu/nazara/nazaragateway/subscription-pipeline/kafka2s3
+cd /home/ubuntu/NZ/nzgateway/subscription-pipeline/kafka2s3
 mvn clean install
 
-cd /home/ubuntu/nazara/nazaragateway/subscription-pipeline/s3toOpsdb
+cd /home/ubuntu/NZ/nzgateway/subscription-pipeline/s3toOpsdb
 mvn clean install package
 ```
 ---
